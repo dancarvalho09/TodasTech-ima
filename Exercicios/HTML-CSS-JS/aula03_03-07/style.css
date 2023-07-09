@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+
+
+nav {
+  background-color: black;
+  padding: 16px;
+}
+
+nav a {
+  color: yellow;
+  text-decoration: none;
+  margin: 20px;
+  padding: 20px;
+
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: coral;
+}
+
+table.table{
+  margin: 50px 0;
+}
+
+/* td {
+  border: 1px solid black
+} */
+
+tfoot td {
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário Simples</title>
+
+  <style>
+    form {
+      background-color: lightgray;
+      width: 500px;
+      height: 130px;
+      border: 1px solid gray;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 80px auto;
+      padding: 15px;
+
+    }
+
+    input {
+      height: 50px;
+      border: 1px solid gray;
+      border-radius: 4px;
+      
+    }
+  </style>
+
+  <script>
+    function mensagem() {
+      let nome = document.getElementById("nome").value;
+      let idade = document.getElementById("idade").value;
+      alert(`${nome} tem ${idade} anos.`)
+    }
+  </script>
+</head>
+<body>
+    <form action="">
+      <input type="text" name="name" id="nome" placeholder="Informe seu nome">
+      <input type="text" name="age" id="idade" placeholder="Informe sua idade">
+      <input type="submit" name="enviar" id="enviar" value="Enviar" onclick="mensagem()">
+    </form>
+</body>
+</html>

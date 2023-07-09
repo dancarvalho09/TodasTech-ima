@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+form {
+  width: 600px;
+  margin: 30px auto;
+}
+
+form input {
+  margin-top: 10px;
+}
+
+.table {
+  width: 1000px;
+  margin: 30px auto;
+}
+
+th {
+  text-align: center;
+}

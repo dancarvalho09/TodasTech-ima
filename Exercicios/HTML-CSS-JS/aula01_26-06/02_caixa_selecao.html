@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <!-- CSS -->
+  <style>
+    body {
+      background-color: rgb(255, 213, 158);
+    }
+    select {
+      background-color: rgb(209, 247, 247);
+      width: 200px;
+      border-radius: 10px;
+      border: 3px solid cornflowerblue;
+      margin: 200px 100px;
+      padding: 10px;
+    }
+
+    option {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+    }
+  </style>
+
+   <!-- JS -->
+  <script>
+    //função
+    function descricao(valor) {
+      
+      //estrutura de escolha
+      switch(parseInt(valor)) {
+        case 1: alert("Maior cidade do país"); break;
+        case 2: alert("Praias maravilhosas"); break;
+        case 3: alert("Capital dos barzinhos"); break;
+      }
+    }
+  </script>
+
+</head>
+<body>
+
+  <select onchange="descricao(this.value)">
+    <option value="0">Selecione uma cidade</option>
+    <option value="1">São Paulo</option>
+    <option value="2">Rio de Janeiro</option>
+    <option value="3">Belo Horizonte</option>
+  </select>
+  
+</body>
+</html>

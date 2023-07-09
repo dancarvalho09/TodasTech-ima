@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> <!--bootstrap / importante estar antes do style -->
+  <link rel="stylesheet" href="style.css">
+  <title>Conversão de Moedas</title>
+</head>
+<body>
+  <form>
+    <h1>Conversor de Moedas</h1>
+    <img src="images/money_icon.svg" alt="Imagem de dinheiro">
+    <input type="number" id="valor" placeholder="Valor" class="form-control">
+    <select id="moeda" class="form-control">
+      <option value="0">Escolha a conversão</option>
+      <option value="1">Real para Dólar</option>
+      <option value="2">Dólar para Real</option>
+    </select>
+    <input class="btn btn-primary" type="button" value="Calcular"> <!--btn: estrutura / btn-primary: cor -->
+  </form>
+</body>
+</html>

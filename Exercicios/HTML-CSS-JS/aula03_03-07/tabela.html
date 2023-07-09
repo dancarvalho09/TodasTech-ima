@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Tabela</title>
+
+</head>
+<body>
+  <nav>
+    <a href="link.html">Página de Link</a>
+    <a href="listas.html">Página de Listas</a>
+    <a href="tabela.html">Página de Tabelas</a>
+  </nav>
+
+
+  <!-- EXEMPLO 1 -->
+  <!-- tr: linhas -->
+  <!-- td: colunas -->
+  <table class="table">
+    <tr> 
+      <td>Ana</td>
+      <td>Bianca</td>
+      <td>Julia</td>
+    </tr>
+    <tr> 
+      <td>Carla</td>
+      <td>Luciana</td>
+      <td>Sueli</td>
+    </tr>
+  </table>
+
+ <!--#-----------------------------------------------------------------------------------------#-->
+
+  <!-- EXEMPLO 2 -->
+
+  <table class="table">
+   
+    <tr>
+      <td rowspan="2" style="background-color: rgb(251, 251, 171);">1</td>
+      <td colspan="2" style="background-color: rgb(171, 239, 171);">2</td>
+      <!-- <td3><td> -->
+    </tr>
+    <tr>
+      <!-- <td>4<td> -->
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <!--#-----------------------------------------------------------------------------------------#-->
+
+  <!-- EXEMPLO 3 -->
+
+  <table class="table table-dark table-striped">
+
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Cidade</th>
+        <th>UF</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+      <td>Bianca</td>
+      <td>São Paulo</td>
+      <td>SP</td>
+      </tr>
+
+      <tr>
+        <td>Priscila</td>
+        <td>Curitiba</td>
+        <td>PR</td>
+      </tr>
+
+      <tr>
+        <td>Carla</td>
+        <td>Belo Horizonte</td>
+        <td>MG</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td colspan="3">Foram encontrados 2 registros. <a href="#">Clique aqui</a> para mais registros.</td>
+      </tr>
+    </tfoot>
+
+  </table>
+</body>
+</html>
