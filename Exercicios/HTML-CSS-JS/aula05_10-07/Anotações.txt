@@ -1,0 +1,18 @@
+
+> API: Application Programming Interface
+
+  - Conceito: é um sistema que pode realizar diversas requisições
+
+  - Requisições:
+    POST:      Cadastrar
+    GET:       Selecionar
+    PUT:       Alterar
+    DELETE:    Remover
+
+
+  - Padrão de dados (envio e recebimento): JSON
+
+Sites citados durante a aula
+  https://viacep.com.br 
+  https://www.4devs.com.br 
+  https://jsonplaceholder.typicode.com/
