@@ -16,7 +16,7 @@
 
 <ul>
     <li>Curva de aprendizado</li>
-    <li>Em projtos pequenos o código fica complexo</li>
+    <li>Em projetos pequenos o código fica complexo</li>
     <li></li>
     <li></li>
     <li></li>
