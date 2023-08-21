@@ -3,6 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:another_carousel_pro/another_carousel_pro.dart';
 
+//my own imports
+import 'package:fusion_shop_app/components/horizontal_listview.dart';
+import 'package:fusion_shop_app/components/products_home.dart';
+
 void main() {
   runApp(
     MaterialApp(
@@ -25,16 +29,18 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     Widget image_carousel = new Container(
       height: 200,
-      width: 150,
+      width: 200,
       child: AnotherCarousel(
         boxFit: BoxFit.cover,
         images: [
-          AssetImage('images/carousel/headphones.png'),
-          AssetImage('images/carousel/pendrives.jpg'),
+          AssetImage('images/carousel/tvs.jpg'),
+          AssetImage('images/carousel/eletros.jpg'),
           AssetImage('images/carousel/smartphones.png'),
-          AssetImage('images/carousel/smartwaches.png')
+          AssetImage('images/carousel/smartwaches.png'),
+          AssetImage('images/carousel/headphones.png'),
+          AssetImage('images/carousel/pendrives.jpg')
         ],
-        autoplay: true,
+        autoplay: false,
         animationCurve: Curves.fastOutSlowIn,
         animationDuration: Duration(milliseconds: 800),
         dotSize: 4.0,
@@ -132,7 +138,26 @@ class _HomePageState extends State<HomePage> {
     ),
     body: new ListView(
       children: <Widget>[
-        image_carousel
+        //image carousel home
+        image_carousel,
+
+        //padding widget
+        new Padding(padding: const EdgeInsets.all(15.0),
+        child:new Text('Categorias'),),
+
+        //Horizontal list view begins here
+        HorizontalList(),
+
+        //padding widget
+        new Padding(padding: const EdgeInsets.all(20),
+          child: new Text('Produtos recentes'),
+        ),
+        
+        //grid view
+        Container(
+          height: 320,
+          child: ProductsHome(),
+        ),
       ],
     ),
    );

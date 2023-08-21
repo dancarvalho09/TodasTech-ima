@@ -22,6 +22,8 @@ flutter:
   assets:
     - images/carousel/
     - images/home/
+    - images/icons/
+    - images/products/
  
   
   
