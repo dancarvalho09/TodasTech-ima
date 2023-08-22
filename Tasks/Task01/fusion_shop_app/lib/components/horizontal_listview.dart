@@ -11,16 +11,34 @@ class HorizontalList extends StatelessWidget {
         scrollDirection: Axis.horizontal,
         children: const <Widget>[
           Categoria(
-            image_location: 'images/icons/tv-icon.png' 
-            // image_caption: 'TVs',
+            imageLocation: 'images/icons/tv-icon.png', 
+            imageCaption: 'TVs',
           ),
-          Categoria(image_location: 'images/icons/eletro-icon.png'),
-          Categoria(image_location: 'images/icons/smartphone-icon.png'),
-          Categoria(image_location: 'images/icons/smartwatch-icon.png',),
-          Categoria(image_location: 'images/icons/headphone-icon.png'),
-          Categoria(image_location: 'images/icons/pendrive-icon.png'),
           
+          Categoria(
+            imageLocation: 'images/icons/eletro-icon.png',
+            imageCaption: 'Eletrodomésticos',
+            ),
           
+          Categoria(
+            imageLocation: 'images/icons/smartphone-icon.png',
+            imageCaption: 'Smartphones',
+            ),
+          
+          Categoria(
+            imageLocation: 'images/icons/smartwatch-icon.png',
+            imageCaption: 'Smartwaches',
+            ),
+          
+          Categoria(
+            imageLocation: 'images/icons/headphone-icon.png',
+            imageCaption: 'Headphones',
+            ),
+          
+          Categoria(
+            imageLocation: 'images/icons/pendrive-icon.png',
+            imageCaption: 'Pendrives',
+          ),
         ],
         ),
     );
@@ -30,27 +48,30 @@ class HorizontalList extends StatelessWidget {
 class Categoria extends StatelessWidget {
   const Categoria({
     super.key, 
-    required this.image_location, 
-    // required this.image_caption
+    required this.imageLocation, 
+    required this.imageCaption
   });
 
   //variables
-  final String image_location;
-  // final String image_caption;
+  final String imageLocation;
+  final String imageCaption;
 
   @override
   Widget build(BuildContext context) {
-    return Padding(padding: const EdgeInsets.all(2.0),
+    return Padding(padding: const EdgeInsets.all(1.0),
     child: InkWell(onTap: (){},
     child: Container(
-      width: 100.0,
+      width: 150.0,
       alignment: Alignment.center,
       child: ListTile(
-        title: Image.asset(image_location, width: 50, height: 40),
-        // subtitle: Image.asset(image_caption, width: 100, height: 40)
-        
+        title: Image.asset(imageLocation, width: 70, height: 50),
+        subtitle: Container(
+          alignment: Alignment.topCenter,
+          child: Text(imageCaption),
+        ) ,
         ),
     )
-    ),);
+    ),
+    );
   }
 }

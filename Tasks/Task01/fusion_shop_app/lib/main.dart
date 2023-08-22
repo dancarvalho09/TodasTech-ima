@@ -5,7 +5,7 @@ import 'package:another_carousel_pro/another_carousel_pro.dart';
 
 //my own imports
 import 'package:fusion_shop_app/components/horizontal_listview.dart';
-import 'package:fusion_shop_app/components/products_home.dart';
+import 'package:fusion_shop_app/components/recents_products_home.dart';
 
 void main() {
   runApp(
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
           AssetImage('images/carousel/headphones.png'),
           AssetImage('images/carousel/pendrives.jpg')
         ],
-        autoplay: false,
+        autoplay: true,
         animationCurve: Curves.fastOutSlowIn,
         animationDuration: Duration(milliseconds: 800),
         dotSize: 4.0,
@@ -149,14 +149,14 @@ class _HomePageState extends State<HomePage> {
         HorizontalList(),
 
         //padding widget
-        new Padding(padding: const EdgeInsets.all(20),
+        new Padding(padding: const EdgeInsets.all(18),
           child: new Text('Produtos recentes'),
         ),
         
         //grid view
         Container(
           height: 320,
-          child: ProductsHome(),
+          child: RecentsProducts(),
         ),
       ],
     ),
