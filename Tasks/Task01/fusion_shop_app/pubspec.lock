@@ -2,7 +2,7 @@
 # See https://dart.dev/tools/pub/glossary#lockfile
 packages:
   another_carousel_pro:
-    dependency: "direct dev"
+    dependency: "direct main"
     description:
       name: another_carousel_pro
       sha256: "18a69ab3317ddd57e23125792f21984205cf81da32029f8032c3cc0f34d56ee1"
